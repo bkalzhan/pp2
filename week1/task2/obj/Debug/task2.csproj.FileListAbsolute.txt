@@ -1,7 +1,0 @@
-C:\pp2\week1\task2\bin\Debug\task2.exe.config
-C:\pp2\week1\task2\bin\Debug\task2.exe
-C:\pp2\week1\task2\bin\Debug\task2.pdb
-C:\pp2\week1\task2\obj\Debug\task2.csprojAssemblyReference.cache
-C:\pp2\week1\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
-C:\pp2\week1\task2\obj\Debug\task2.exe
-C:\pp2\week1\task2\obj\Debug\task2.pdb
