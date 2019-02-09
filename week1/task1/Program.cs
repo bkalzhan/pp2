@@ -6,21 +6,24 @@ namespace task1
     {
         static void Main(string[] args)
         {
-            int cnt = 0; //to find number of prime integers 
-            int n = int.Parse(Console.ReadLine()); //number of input integers 
-            int[] array = new int[n]; //a new array to save prime numbers
-            string[] s = Console.ReadLine().Split(); //the numbers
+            int cnt = 0; // to foind numbers of prime
+            int n = int.Parse(Console.ReadLine()); //number of input integers
+            int[] array = new int[n];// a new array to save prime numbers
+            string[] s = Console.ReadLine().Split(); // input integers
             for (int i = 0; i < n; i++)
             {
+                int cnt1 = 0; // for counting number of possible dividers without remainder
                 int k = int.Parse(s[i]);
-                if (k % 2 == 1)
+                for (int j = 1; j < k; j++)
                 {
-                    array[cnt++] = k; // to add this number to the array and to increase value of cnt +1
+                    if (k % j == 0) cnt1++;
                 }
+                if (cnt1 == 1)
+                    array[cnt++] = k;
             }
-            Console.WriteLine(cnt); //the first output- number of the prime integers
-            for (int i = 0; i < cnt; i++) //loop to output each of the prime integers
-                Console.Write(array[i] + " ");
+            Console.WriteLine(cnt); // number of prime integers
+            for (int i = 0; i < cnt; i++)
+                Console.Write(array[i] + " ");//output prime numbers
             Console.ReadKey();
         }
     }
