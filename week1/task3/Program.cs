@@ -10,30 +10,26 @@ namespace task3
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine()); // number of input integers
-            int[] array = new int[n]; // array for input integers
+            int n = int.Parse(Console.ReadLine()); // количество инпут цифр
+            int[] array = new int[n];//массив для инпут цифр
             string[] s = Console.ReadLine().Split();
             for(int i=0; i<n; i++)
             {
-                array[i] = int.Parse(s[i]); // string to integer
+                array[i] = int.Parse(s[i]);
             }
-            WW(array, n);//calling the function and giving the array with integers and number of the integers
-            Console.ReadKey();
-        }
-        static void WW(int[] array, int n)
-        {
-            int[] array1 = new int[2 * n];// array for output integers
-            int j = 0;//for elements of first array
+            int[] array1 = new int[2 * n];// массив для оутпут цифр
+            int j = 0;//для элементов первого массива
             for(int i=0; i<2*n; i++)
             {
-                array1[i++] = array[j];//saving each element of the first array as a 2 elements in a row in the second array
+                array1[i++] = array[j];//2 раза сохранить каждого элемента первого массива 
                 array1[i] = array[j];
                 j++;
             }
             for(int i=0; i<2*n; i++)
             {
-                Console.Write(array1[i] + " ");//output the result
+                Console.Write(array1[i] + " ");//выводим результат
             }
+            Console.ReadKey();
         }
     }
 }
