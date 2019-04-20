@@ -30,12 +30,7 @@ namespace task2
     {
         static void Main(string[] args)
         {
-            string[] s = Console.ReadLine().Split(); //считываем стринг, разделяем на 3 стринга
-            Student newby = new Student(s[0], s[1]);
-            newby.year = int.Parse(s[2]);
-            newby.plusyear();
-            newby.cout();
-            Console.ReadKey();
+           
         }
     }
 }

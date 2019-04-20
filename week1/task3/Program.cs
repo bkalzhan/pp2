@@ -8,6 +8,10 @@ namespace task3
 {
     class Program
     {
+        public void VV()
+        {
+
+        }
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine()); // количество инпут цифр

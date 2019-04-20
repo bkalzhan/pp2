@@ -15,14 +15,14 @@ namespace task3
         {
             foreach (FileInfo f in dir.GetFiles())      //взять файлы из директори и показать
             {
-                  Probely(lvl);
+                 Probely(lvl);
                 Console.ForegroundColor = ConsoleColor.Blue;
 
                 Console.WriteLine(f.Name);
             }
             foreach (DirectoryInfo d in dir.GetDirectories())  //взять директориес из директори и показать
             {
-                 Probely(lvl);
+                Probely(lvl);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(d.Name);
                 Direc(d, lvl + 1);        //путем рекурсии вызовим метод Direc, чтобы показать другие файлы и каталоги
